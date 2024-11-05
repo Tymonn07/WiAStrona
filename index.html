@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Strona</title>
+    <script>
+        function openNewWindow() {
+            window.open("https://zse.edu.gdansk.pl/pl"); // otwiera nowe okno
+            alert("Nowe okno zostalo otwarte"); // alert zostaje wyswietlony
+        }
+
+        function askUser() {
+            const name = prompt("Podaj imie"); // zapytanie uzytkownika o imie
+            
+            if (name) {
+                alert("Witaj " + name); // ten altert sie wyswietla jesli podamy imie
+            } else {
+                alert("Nie wprowadzono imienia"); // jesli nie podano imienia, to ten alert sie wyswietla
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Strona Tymon Kuznicki 3K</h1>
+
+    <!-- przycisk do otwierania nowego okna -->
+    <button onclick="openNewWindow()">strona zse</button>
+    
+    <!-- przycisk ktory pyta sie uzytkownika o imie -->
+    <button onclick="askUser()">prompt</button>
+
+</body>
+</html>
+
+<!--Tymon Kuznicki 3K-->
